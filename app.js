@@ -62,7 +62,7 @@ app.get('/api/lumens', function(req, res) {
 
 function updateApiLumens() {
   Promise.all([
-    lumens.totalCoins("https://horizon.stellar.org"),
+    lumens.totalCoins("http://stellar-001.arisebank.net:8000"),
     lumens.availableCoins(),
     lumens.distributionAll(),
     lumens.distributionDirectSignup(),
@@ -110,7 +110,7 @@ redisClient.get('paging_token', function(err, pagingToken) {
     pagingToken = 'now';
   }
 
-  var horizon = new stellarSdk.Server('https://horizon.stellar.org');
+  var horizon = new stellarSdk.Server('http://stellar-001.arisebank.net:8000');
   horizon.ledgers().cursor(pagingToken).stream({
     onmessage: function(ledger) {
       var date = moment(ledger.closed_at).format("YYYY-MM-DD");
