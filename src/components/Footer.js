@@ -8,9 +8,9 @@ export default class AppBar extends React.Component {
           <strong>Other tools</strong>
         </p>
         <p>
-          <a href="https://stellarterm.com/" target="_blank">StellarTerm</a><br />
-          <a href="https://stellarchain.io/" target="_blank">StellarChain</a><br />
-          <a href="http://stellar.network/" target="_blank">Stellar.network</a>
+          <a href="http://lab.arisebank.com" target="_blank">AriseLabs</a><br />
+          <a href="http://stellex.arisebank.com" target="_blank">Stellar Blockchain</a><br />
+          <a href="http://stellar.arisebank.net" target="_blank">Arise Stellar Network</a>
         </p>
       </div>
       <div className="clear"></div>
